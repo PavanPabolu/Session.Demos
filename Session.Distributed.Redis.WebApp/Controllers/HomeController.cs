@@ -6,27 +6,44 @@ namespace Session.Distributed.Redis.WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        [HttpGet("set-session")]
+        public IActionResult SetSession()
         {
-            _logger = logger;
+            HttpContext.Session.SetString("UserName", "John Doe");
+            HttpContext.Session.SetInt32("UserAge", 30);
+            return Content("Session data has been set.");
         }
 
-        public IActionResult Index()
+        [HttpGet("get-session")]
+        public IActionResult GetSession()
         {
-            return View();
+            var userName = HttpContext.Session.GetString("UserName");
+            var userAge = HttpContext.Session.GetInt32("UserAge");
+
+            if (userName == null || userAge == null)
+            {
+                return Content("No session data found.");
+            }
+
+            return Content($"UserName: {userName}, UserAge: {userAge}");
         }
 
-        public IActionResult Privacy()
+        [HttpGet("clear-session")]
+        public IActionResult ClearSession()
         {
-            return View();
+            HttpContext.Session.Clear();
+            return Content("Session data has been cleared.");
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
+
+        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //public IActionResult Error()
+        //{
+        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        //}
     }
 }
