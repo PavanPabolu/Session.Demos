@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 //To use SQL Server as a distributed session store
 1.Install Required Package
 Install-package Microsoft.AspNetCore.Session.SqlServer
+Install-package Microsoft.Extensions.Caching.SqlServer
 
 2.Create Session Table: Run the following command to create the required table
 dotnet sql-cache create "Server=localhost\\SQLEXPRESS;Database=Demo;Trusted_Connection=True;" dbo Session
@@ -24,7 +25,7 @@ builder.Services.AddDistributedSqlServerCache(options =>
     options.TableName = "Session";
 });
 
-// Configure session to use Redis
+// Configure session to use sql
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout
