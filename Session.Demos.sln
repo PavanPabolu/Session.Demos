@@ -3,16 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session.Basic.WebApp", "Session.Basic.WebApp\Session.Basic.WebApp.csproj", "{23F8E2C7-553C-452A-80E4-2719CFD6C9E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session.Basic.WebApp", "Session.Basic.WebApp\Session.Basic.WebApp.csproj", "{23F8E2C7-553C-452A-80E4-2719CFD6C9E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EBEEB04C-F7BA-42FA-BB2A-9F73966E5FE4}"
 	ProjectSection(SolutionItems) = preProject
 		1Readme-Session Demos.txt = 1Readme-Session Demos.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session.Distributed.Redis.WebApp", "Session.Distributed.Redis.WebApp\Session.Distributed.Redis.WebApp.csproj", "{3841E257-878C-407D-8C2F-3F28D77D3567}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session.Distributed.Redis.WebApp", "Session.Distributed.Redis.WebApp\Session.Distributed.Redis.WebApp.csproj", "{3841E257-878C-407D-8C2F-3F28D77D3567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session.Distributed.SQL.WebApp", "Session.Distributed.SQL.WebApp\Session.Distributed.SQL.WebApp.csproj", "{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session.Distributed.SQL.WebApp", "Session.Distributed.SQL.WebApp\Session.Distributed.SQL.WebApp.csproj", "{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session.DistributedSessionStore.SQL.WebApi2", "Session.DistributedSessionStore.SQL.WebApi2\Session.DistributedSessionStore.SQL.WebApi2.csproj", "{8325FFA6-60A9-419F-8C46-A99604467D8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
