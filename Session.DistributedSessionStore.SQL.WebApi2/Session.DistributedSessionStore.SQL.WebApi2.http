@@ -1,6 +1,0 @@
-@Session.DistributedSessionStore.SQL.WebApi2_HostAddress = http://localhost:5214
-
-GET {{Session.DistributedSessionStore.SQL.WebApi2_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

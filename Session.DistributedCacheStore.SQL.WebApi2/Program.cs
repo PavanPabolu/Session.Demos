@@ -16,6 +16,8 @@ builder.Services.AddControllers();
 //dotnet sql-cache create "Data Source=localhost\\SQLEXPRESS;Initial Catalog=SessionDB;Integrated Security=True;TrustServerCertificate=True" dbo MySessions
 
 
+//builder.Services.AddDistributedMemoryCache(); //This method provides the necessary in-memory storage backend for storing session data. It configures IMemoryCache, allowing us to use memory caching to store session data.
+
 
 var app = builder.Build();
 

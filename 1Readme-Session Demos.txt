@@ -10,15 +10,10 @@ Sessions typically generate a unique identifier (session ID) for each user sessi
 References:
 -------------------------------------------------------------------------------------------------------
 
-Sessions in ASP.NET Core MVC:
+Sessions in ASP.NET Core MVC: ***
 https://dotnettutorials.net/lesson/sessions-in-asp-net-core-mvc/
-* What are Sessions in Web Applications?
-* How Does Session Work in Web Application?
+* Workflow Steps Session Work in Web Application?
 * Types of Sessions in Web Applications
-* How To Use Session in ASP.NET Core MVC?
-* How to Set and Get Session Values in ASP.NET Core MVC?
-* How do you Access the Session Object in a View?
-* Use Cases of Sessions in ASP.NET Core MVC
 * Limitations of Sessions in ASP.NET Core Web Application
 
 Distributed or Out-Proc Sessions in ASP.NET Core MVC

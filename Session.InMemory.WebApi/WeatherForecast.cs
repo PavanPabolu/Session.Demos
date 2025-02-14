@@ -1,4 +1,4 @@
-namespace Session.DistributedSessionStore.SQL.WebApi2
+namespace Session.InMemory.WebApi
 {
     public class WeatherForecast
     {

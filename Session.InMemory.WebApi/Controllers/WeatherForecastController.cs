@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Session.DistributedSessionStore.SQL.WebApi2.Controllers
+namespace Session.InMemory.WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
