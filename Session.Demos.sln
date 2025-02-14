@@ -14,8 +14,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session.Distributed.Redis.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session.Distributed.SQL.WebApp", "Session.Distributed.SQL.WebApp\Session.Distributed.SQL.WebApp.csproj", "{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session.DistributedSessionStore.SQL.WebApi2", "Session.DistributedSessionStore.SQL.WebApi2\Session.DistributedSessionStore.SQL.WebApi2.csproj", "{8325FFA6-60A9-419F-8C46-A99604467D8B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session.DistributedCacheStore.SQL.WebApi2", "Session.DistributedCacheStore.SQL.WebApi2\Session.DistributedCacheStore.SQL.WebApi2.csproj", "{417C6529-3B6C-4574-A47E-F9021F80F024}"
 EndProject
 Global
@@ -36,10 +34,6 @@ Global
 		{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AB3BAC6-3589-4041-ADE3-3A06C1FEBFAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8325FFA6-60A9-419F-8C46-A99604467D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{417C6529-3B6C-4574-A47E-F9021F80F024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{417C6529-3B6C-4574-A47E-F9021F80F024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{417C6529-3B6C-4574-A47E-F9021F80F024}.Release|Any CPU.ActiveCfg = Release|Any CPU
