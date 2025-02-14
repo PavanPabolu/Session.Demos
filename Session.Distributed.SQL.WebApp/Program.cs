@@ -28,6 +28,7 @@ builder.Services.AddDistributedSqlServerCache(options =>
 // Configure session to use sql
 builder.Services.AddSession(options =>
 {
+    //options.Cookie.Name = ".SessionExample.Session";
     options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout
     options.Cookie.HttpOnly = true; // Security setting
     options.Cookie.IsEssential = true; // Essential for GDPR compliance

@@ -6,6 +6,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession(options =>
 {
+    //options.Cookie.Name = ".SessionExample.Session";
     options.IdleTimeout = TimeSpan.FromMinutes(30); // Session timeout
     options.Cookie.HttpOnly = true; // Security option
     options.Cookie.IsEssential = true; // Make the cookie essential

@@ -1,3 +1,6 @@
+//using Microsoft.AspNetCore.Session;
+//using StackExchange.Redis;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
@@ -5,7 +8,7 @@ builder.Services.AddControllersWithViews();
 
 //c.com/c/678e4058-48d0-8005-88f3-b8aa58d41674
 
-//To Use Distributed Sessions with Redis
+//To Use Distributed-Sessions-Store with Redis
 //Install-package Microsoft.Extensions.Caching.StackExchangeRedis
 
 // Add Redis distributed cache
@@ -18,6 +21,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 // Configure session to use Redis
 builder.Services.AddSession(options =>
 {
+    //options.Cookie.Name = ".SessionExample.Session";
     options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout
     options.Cookie.HttpOnly = true; // Security setting
     options.Cookie.IsEssential = true; // Essential for GDPR compliance
