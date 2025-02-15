@@ -6,8 +6,8 @@ builder.Services.AddControllers();
 
 
 
-//https://dotnettutorials.net/lesson/sessions-in-asp-net-core-mvc/
-//builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options => //Implicit reference "Microsoft.AspNetCore.Session" //
 {
     options.Cookie.Name = ".MyExample.Session";
