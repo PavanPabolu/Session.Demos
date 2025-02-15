@@ -6,12 +6,12 @@ builder.Services.AddControllers();
 
 
 
-
-
-builder.Services.AddSession(options => //Implicit reference "Microsoft.AspNetCore.Session"
+//https://dotnettutorials.net/lesson/sessions-in-asp-net-core-mvc/
+//builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options => //Implicit reference "Microsoft.AspNetCore.Session" //
 {
     options.Cookie.Name = ".MyExample.Session";
-    options.IdleTimeout = TimeSpan.FromSeconds(180);//Session timeout, Sets the duration for which the session can remain idle
+    options.IdleTimeout = TimeSpan.FromSeconds(20);//Session timeout, Sets the duration for which the session can remain idle
     options.IOTimeout = TimeSpan.FromSeconds(10);   //Sets the maximum time allowed for the session middleware for input/output operations
     options.Cookie.HttpOnly = true;     //Security option, Determines if the cookie is accessible only through HTTP (not via client-side scripts like JavaScript)
     options.Cookie.IsEssential = true;  //Make the cookie essential for the application to function correctly
