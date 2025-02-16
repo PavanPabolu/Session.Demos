@@ -10,7 +10,7 @@ Sessions typically generate a unique identifier (session ID) for each user sessi
 References:
 -------------------------------------------------------------------------------------------------------
 
-Sessions in ASP.NET Core MVC: ***
+Sessions in ASP.NET Core MVC(In-Proc Sessions): ***
 https://dotnettutorials.net/lesson/sessions-in-asp-net-core-mvc/
 * Workflow Steps Session Work in Web Application?
 * Types of Sessions in Web Applications

@@ -1,5 +1,5 @@
 //using Microsoft.AspNetCore.Session;
-//using StackExchange.Redis;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,8 +21,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
 // Configure session to use Redis
 builder.Services.AddSession(options =>
 {
-    //options.Cookie.Name = ".SessionExample.Session";
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout
+    options.Cookie.Name = ".MySessionExample.Session";
+    options.IdleTimeout = TimeSpan.FromMinutes(10); // Set session timeout
     options.Cookie.HttpOnly = true; // Security setting
     options.Cookie.IsEssential = true; // Essential for GDPR compliance
 });
@@ -52,7 +52,10 @@ app.UseRouting();
 
 app.UseSession(); // Enable session middleware
 app.MapDefaultControllerRoute();
-
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllers();
+//});
 
 
 app.Run();
